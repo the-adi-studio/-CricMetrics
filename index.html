@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricMetrics Pro v3.0 - Analytical Cricket Intelligence Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><span>📊</span> CricMetrics <span class="pro-tag">ENTERPRISE</span></div>
+        <div class="nav-meta">
+            <span id="current-status" class="live-badge">● Core Matrix Online [24 Nodes Loaded]</span>
+        </div>
+    </header>
+
+    <section class="hero-dashboard">
+        <div class="hero-backdrop"></div>
+        <div class="hero-content">
+            <span class="sub-title">BCA Final Year Semester VI Software Engineering Project</span>
+            <h2>Statistical Analytics & Iconic Milestone Platform</h2>
+            <p>Evaluating performance matrices, dynamic query filtering layouts, and media-rich milestone visualizations for professional cricket athletics.</p>
+        </div>
+    </section>
+
+    <main class="dashboard-container">
+        
+        <section class="control-panel">
+            <div class="panel-header">
+                <h3>Athletic Profiles Database Matrix</h3>
+                <p>Toggle technical role classifications seamlessly using client-side DOM array processing</p>
+            </div>
+            <div class="filter-controls">
+                <button class="filter-btn active" data-role="all">All 24 Masters</button>
+                <button class="filter-btn" data-role="batsman">Batsmen Only</button>
+                <button class="filter-btn" data-role="bowler">Bowlers Only</button>
+                <button class="filter-btn" data-role="allrounder">All-Rounders</button>
+            </div>
+        </section>
+
+        <section class="data-grid" id="player-grid">
+            
+            <div class="player-card batsman rcb" data-name="Virat Kohli">
+                <div class="player-banner rcb-banner"></div>
+                <div class="player-profile-img"><img src="https://www.bcci.tv/players/virat-kohli-profile-images/primary" alt="Virat Kohli"></div>
+                <div class="card-header"><h4>Virat Kohli</h4><span class="role-tag tag-bat">Batsman</span></div>
+                <div class="card-body">
+                    <div class="team-location">🔴 Royal Challengers Bangalore</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">295</span></div>
+                        <div class="stat-box"><span class="lbl">Runs</span><span class="val">13848</span></div>
+                        <div class="stat-box"><span class="lbl">Best Score</span><span class="val">183</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1540747737956-37872e7e9821?q=80&w=600"
+                            data-stadium="Wankhede Stadium, Mumbai"
+                            data-against="New Zealand"
+                            data-series="ICC Cricket World Cup Semifinal"
+                            data-moment="Historical 50th ODI Century Celebration">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card allrounder rcb" data-name="Glenn Maxwell">
+                <div class="player-banner rcb-banner"></div>
+                <div class="player-profile-img"><img src="https://www.bcci.tv/players/glenn-maxwell-profile-images/primary" alt="Glenn Maxwell"></div>
+                <div class="card-header"><h4>Glenn Maxwell</h4><span class="role-tag tag-ar">All-Rounder</span></div>
+                <div class="card-body">
+                    <div class="team-location">🔴 Royal Challengers Bangalore</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">142</span></div>
+                        <div class="stat-box"><span class="lbl">Runs</span><span class="val">3900</span></div>
+                        <div class="stat-box"><span class="lbl">Best Score</span><span class="val">201*</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=600"
+                            data-stadium="Srinagar Stadium / Wankhede"
+                            data-against="Afghanistan"
+                            data-series="ICC World Cup Group Stage"
+                            data-moment="Unbelievable Double Century Standing Ovation">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card bowler rcb" data-name="Mohammed Siraj">
+                <div class="player-banner rcb-banner"></div>
+                <div class="player-profile-img"><img src="https://www.bcci.tv/players/mohammed-siraj-profile-images/primary" alt="Mohammed Siraj"></div>
+                <div class="card-header"><h4>Mohammed Siraj</h4><span class="role-tag tag-bowl">Bowler</span></div>
+                <div class="card-body">
+                    <div class="team-location">🔴 Royal Challengers Bangalore</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">44</span></div>
+                        <div class="stat-box"><span class="lbl">Wickets</span><span class="val">74</span></div>
+                        <div class="stat-box"><span class="lbl">Best Bowl</span><span class="val">6/21</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600"
+                            data-stadium="R. Premadasa Stadium, Colombo"
+                            data-against="Sri Lanka"
+                            data-series="Asia Cup Grand Final"
+                            data-moment="Siuuu Wicket Celebration - 6 Wicket Haul Crushers">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card batsman rcb" data-name="Faf du Plessis">
+                <div class="player-banner rcb-banner"></div>
+                <div class="player-profile-img"><img src="https://assets.iplt20.com/ipl/IPLHeadshot2024/94.png" alt="Faf du Plessis"></div>
+                <div class="card-header"><h4>Faf du Plessis</h4><span class="role-tag tag-bat">Batsman</span></div>
+                <div class="card-body">
+                    <div class="team-location">🔴 Royal Challengers Bangalore</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">143</span></div>
+                        <div class="stat-box"><span class="lbl">Runs</span><span class="val">5507</span></div>
+                        <div class="stat-box"><span class="lbl">Best Score</span><span class="val">185</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=600"
+                            data-stadium="M. Chinnaswamy Stadium"
+                            data-against="Super Kings"
+                            data-series="IPL Playoffs Blockbuster"
+                            data-moment="Captain's Flying Boundary Catch & Half-Century Punch">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card batsman rcb" data-name="Rajat Patidar">
+                <div class="player-banner rcb-banner"></div>
+                <div class="player-profile-img"><img src="https://assets.iplt20.com/ipl/IPLHeadshot2024/189.png" alt="Rajat Patidar"></div>
+                <div class="card-header"><h4>Rajat Patidar</h4><span class="role-tag tag-bat">Batsman</span></div>
+                <div class="card-body">
+                    <div class="team-location">🔴 Royal Challengers Bangalore</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">56</span></div>
+                        <div class="stat-box"><span class="lbl">Runs</span><span class="val">1620</span></div>
+                        <div class="stat-box"><span class="lbl">Best Score</span><span class="val">112*</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1540747737956-37872e7e9821?q=80&w=600"
+                            data-stadium="Eden Gardens, Kolkata"
+                            data-against="Lucknow Super Giants"
+                            data-series="IPL Eliminator Tournament"
+                            data-moment="Sensational Playoff Century Bat-Raise Celebration">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card bowler rcb" data-name="Yash Dayal">
+                <div class="player-banner rcb-banner"></div>
+                <div class="player-profile-img"><img src="https://assets.iplt20.com/ipl/IPLHeadshot2024/473.png" alt="Yash Dayal"></div>
+                <div class="card-header"><h4>Yash Dayal</h4><span class="role-tag tag-bowl">Bowler</span></div>
+                <div class="card-body">
+                    <div class="team-location">🔴 Royal Challengers Bangalore</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">32</span></div>
+                        <div class="stat-box"><span class="lbl">Wickets</span><span class="val">38</span></div>
+                        <div class="stat-box"><span class="lbl">Best Bowl</span><span class="val">3/20</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600"
+                            data-stadium="M. Chinnaswamy Stadium"
+                            data-against="Chennai Super Kings"
+                            data-series="IPL Final League Match Clash"
+                            data-moment="Clutch Final Over Defense Roar - Playoff Qualification Ticket">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card batsman mi" data-name="Rohit Sharma">
+                <div class="player-banner mi-banner"></div>
+                <div class="player-profile-img"><img src="https://www.bcci.tv/players/rohit-sharma-profile-images/primary" alt="Rohit Sharma"></div>
+                <div class="card-header"><h4>Rohit Sharma</h4><span class="role-tag tag-bat">Batsman</span></div>
+                <div class="card-body">
+                    <div class="team-location">🔵 Mumbai Indians</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">262</span></div>
+                        <div class="stat-box"><span class="lbl">Runs</span><span class="val">10708</span></div>
+                        <div class="stat-box"><span class="lbl">Best Score</span><span class="val">264</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1540747737956-37872e7e9821?q=80&w=600"
+                            data-stadium="Eden Gardens, Kolkata"
+                            data-against="Sri Lanka"
+                            data-series="Bilateral One Day Series"
+                            data-moment="World Record 264 Run Milestone Helmet Salute">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card batsman mi" data-name="Suryakumar Yadav">
+                <div class="player-banner mi-banner"></div>
+                <div class="player-profile-img"><img src="https://www.bcci.tv/players/suryakumar-yadav-profile-images/primary" alt="Suryakumar Yadav"></div>
+                <div class="card-header"><h4>Suryakumar Yadav</h4><span class="role-tag tag-bat">Batsman</span></div>
+                <div class="card-body">
+                    <div class="team-location">🔵 Mumbai Indians</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">68</span></div>
+                        <div class="stat-box"><span class="lbl">Runs</span><span class="val">2432</span></div>
+                        <div class="stat-box"><span class="lbl">Best Score</span><span class="val">117</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=600"
+                            data-stadium="Trent Bridge, Nottingham"
+                            data-against="England"
+                            data-series="T20 International Match"
+                            data-moment="Incredible 360-Degree Century Pointing-to-Jersey Walk">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card bowler mi" data-name="Jasprit Bumrah">
+                <div class="player-banner mi-banner"></div>
+                <div class="player-profile-img"><img src="https://www.bcci.tv/players/jasprit-bumrah-profile-images/primary" alt="Jasprit Bumrah"></div>
+                <div class="card-header"><h4>Jasprit Bumrah</h4><span class="role-tag tag-bowl">Bowler</span></div>
+                <div class="card-body">
+                    <div class="team-location">🔵 Mumbai Indians</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">89</span></div>
+                        <div class="stat-box"><span class="lbl">Wickets</span><span class="val">149</span></div>
+                        <div class="stat-box"><span class="lbl">Best Bowl</span><span class="val">5/10</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600"
+                            data-stadium="MA Chidambaram Stadium, Chennai"
+                            data-against="Kolkata Knight Riders"
+                            data-series="IPL Regular League Phase"
+                            data-moment="Fierce 5-Wicket Haul Wide Arms Flight Celebration">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card allrounder mi" data-name="Hardik Pandya">
+                <div class="player-banner mi-banner"></div>
+                <div class="player-profile-img"><img src="https://www.bcci.tv/players/hardik-pandya-profile-images/primary" alt="Hardik Pandya"></div>
+                <div class="card-header"><h4>Hardik Pandya</h4><span class="role-tag tag-ar">All-Rounder</span></div>
+                <div class="card-body">
+                    <div class="team-location">🔵 Mumbai Indians</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">86</span></div>
+                        <div class="stat-box"><span class="lbl">Runs</span><span class="val">1476</span></div>
+                        <div class="stat-box"><span class="lbl">Best Score</span><span class="val">93</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1540747737956-37872e7e9821?q=80&w=600"
+                            data-stadium="Narendra Modi Stadium"
+                            data-against="Rajasthan Royals"
+                            data-series="IPL Tournament Finale"
+                            data-moment="Championship Match Winning Core Trophy Raise">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card batsman mi" data-name="Ishan Kishan">
+                <div class="player-banner mi-banner"></div>
+                <div class="player-profile-img"><img src="https://www.bcci.tv/players/ishan-kishan-profile-images/primary" alt="Ishan Kishan"></div>
+                <div class="card-header"><h4>Ishan Kishan</h4><span class="role-tag tag-bat">Batsman</span></div>
+                <div class="card-body">
+                    <div class="team-location">🔵 Mumbai Indians</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">105</span></div>
+                        <div class="stat-box"><span class="lbl">Runs</span><span class="val">2640</span></div>
+                        <div class="stat-box"><span class="lbl">Best Score</span><span class="val">210</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=600"
+                            data-stadium="Zohur Ahmed Stadium, Chattogram"
+                            data-against="Bangladesh"
+                            data-series="India Tour International Match"
+                            data-moment="Fastest ODI Double Century Jump & Roar Milestone">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card bowler mi" data-name="Piyush Chawla">
+                <div class="player-banner mi-banner"></div>
+                <div class="player-profile-img"><img src="https://assets.iplt20.com/ipl/IPLHeadshot2024/149.png" alt="Piyush Chawla"></div>
+                <div class="card-header"><h4>Piyush Chawla</h4><span class="role-tag tag-bowl">Bowler</span></div>
+                <div class="card-body">
+                    <div class="team-location">🔵 Mumbai Indians</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">192</span></div>
+                        <div class="stat-box"><span class="lbl">Wickets</span><span class="val">192</span></div>
+                        <div class="stat-box"><span class="lbl">Best Bowl</span><span class="val">4/17</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600"
+                            data-stadium="Wankhede Stadium, Mumbai"
+                            data-against="Delhi Capitals"
+                            data-series="IPL Regular League Match"
+                            data-moment="Classic Leg-Spin Googly Outstretched Sprint">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card batsman csk" data-name="MS Dhoni">
+                <div class="player-banner csk-banner"></div>
+                <div class="player-profile-img"><img src="https://www.bcci.tv/players/ms-dhoni-profile-images/primary" alt="MS Dhoni"></div>
+                <div class="card-header"><h4>MS Dhoni</h4><span class="role-tag tag-bat">Batsman</span></div>
+                <div class="card-body">
+                    <div class="team-location">🟡 Chennai Super Kings</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">350</span></div>
+                        <div class="stat-box"><span class="lbl">Runs</span><span class="val">10773</span></div>
+                        <div class="stat-box"><span class="lbl">Best Score</span><span class="val">183*</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1540747737956-37872e7e9821?q=80&w=600"
+                            data-stadium="Wankhede Stadium, Mumbai"
+                            data-against="Sri Lanka"
+                            data-series="2011 ICC World Cup Final"
+                            data-moment="World-Winning Helicopter Shot & Match Ball Collection">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card allrounder csk" data-name="Ravindra Jadeja">
+                <div class="player-banner csk-banner"></div>
+                <div class="player-profile-img"><img src="https://www.bcci.tv/players/ravindra-jadeja-profile-images/primary" alt="Ravindra Jadeja"></div>
+                <div class="card-header"><h4>Ravindra Jadeja</h4><span class="role-tag tag-ar">All-Rounder</span></div>
+                <div class="card-body">
+                    <div class="team-location">🟡 Chennai Super Kings</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">197</span></div>
+                        <div class="stat-box"><span class="lbl">Runs</span><span class="val">2756</span></div>
+                        <div class="stat-box"><span class="lbl">Best Score</span><span class="val">87</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=600"
+                            data-stadium="Narendra Modi Stadium"
+                            data-against="Gujarat Titans"
+                            data-series="IPL Epic Grand Finale"
+                            data-moment="Sword-Brandish Celebration after Hitting Final Match Boundary">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card batsman csk" data-name="Ruturaj Gaikwad">
+                <div class="player-banner csk-banner"></div>
+                <div class="player-profile-img"><img src="https://www.bcci.tv/players/ruturaj-gaikwad-profile-images/primary" alt="Ruturaj Gaikwad"></div>
+                <div class="card-header"><h4>Ruturaj Gaikwad</h4><span class="role-tag tag-bat">Batsman</span></div>
+                <div class="card-body">
+                    <div class="team-location">🟡 Chennai Super Kings</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">52</span></div>
+                        <div class="stat-box"><span class="lbl">Runs</span><span class="val">1797</span></div>
+                        <div class="stat-box"><span class="lbl">Best Score</span><span class="val">108*</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1540747737956-37872e7e9821?q=80&w=600"
+                            data-stadium="MA Chidambaram Stadium, Chennai"
+                            data-against="Lucknow Super Giants"
+                            data-series="IPL League Season Match"
+                            data-moment="Captain's Crisp Elegant Cover-Drive Century Salute">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card bowler csk" data-name="Matheesha Pathirana">
+                <div class="player-banner csk-banner"></div>
+                <div class="player-profile-img"><img src="https://assets.iplt20.com/ipl/IPLHeadshot2024/499.png" alt="Matheesha Pathirana"></div>
+                <div class="card-header"><h4>M. Pathirana</h4><span class="role-tag tag-bowl">Bowler</span></div>
+                <div class="card-body">
+                    <div class="team-location">🟡 Chennai Super Kings</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">20</span></div>
+                        <div class="stat-box"><span class="lbl">Wickets</span><span class="val">34</span></div>
+                        <div class="stat-box"><span class="lbl">Best Bowl</span><span class="val">4/28</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600"
+                            data-stadium="Wankhede Stadium, Mumbai"
+                            data-against="Mumbai Indians"
+                            data-series="IPL El-Clasico Derby Match"
+                            data-moment="Signature Eyes-Closed 'Undertaker' Chest-Cross Pose">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card batsman csk" data-name="Shivam Dube">
+                <div class="player-banner csk-banner"></div>
+                <div class="player-profile-img"><img src="https://www.bcci.tv/players/shivam-dube-profile-images/primary" alt="Shivam Dube"></div>
+                <div class="card-header"><h4>Shivam Dube</h4><span class="role-tag tag-bat">Batsman</span></div>
+                <div class="card-body">
+                    <div class="team-location">🟡 Chennai Super Kings</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">31</span></div>
+                        <div class="stat-box"><span class="lbl">Runs</span><span class="val">325</span></div>
+                        <div class="stat-box"><span class="lbl">Best Score</span><span class="val">95*</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=600"
+                            data-stadium="DY Patil Stadium, Navi Mumbai"
+                            data-against="Royal Challengers Bangalore"
+                            data-series="IPL Regular League Phase"
+                            data-moment="Massive 95-Run Spin Destruction Monster Hitting Roar">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card bowler csk" data-name="Tushar Deshpande">
+                <div class="player-banner csk-banner"></div>
+                <div class="player-profile-img"><img src="https://assets.iplt20.com/ipl/IPLHeadshot2024/535.png" alt="Tushar Deshpande"></div>
+                <div class="card-header"><h4>T. Deshpande</h4><span class="role-tag tag-bowl">Bowler</span></div>
+                <div class="card-body">
+                    <div class="team-location">🟡 Chennai Super Kings</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">36</span></div>
+                        <div class="stat-box"><span class="lbl">Wickets</span><span class="val">42</span></div>
+                        <div class="stat-box"><span class="lbl">Best Bowl</span><span class="val">4/27</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600"
+                            data-stadium="MA Chidambaram Stadium, Chennai"
+                            data-against="Sunrisers Hyderabad"
+                            data-series="IPL Regular League Match"
+                            data-moment="Clutch Middle-Overs Death Stumps Knockout Aggression">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card allrounder kkr" data-name="Shreyas Iyer">
+                <div class="player-banner kkr-banner"></div>
+                <div class="player-profile-img"><img src="https://www.bcci.tv/players/shreyas-iyer-profile-images/primary" alt="Shreyas Iyer"></div>
+                <div class="card-header"><h4>Shreyas Iyer</h4><span class="role-tag tag-ar">All-Rounder</span></div>
+                <div class="card-body">
+                    <div class="team-location">💜 Kolkata Knight Riders</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">116</span></div>
+                        <div class="stat-box"><span class="lbl">Runs</span><span class="val">3127</span></div>
+                        <div class="stat-box"><span class="lbl">Best Score</span><span class="val">105</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1540747737956-37872e7e9821?q=80&w=600"
+                            data-stadium="MA Chidambaram Stadium, Chennai"
+                            data-against="Sunrisers Hyderabad"
+                            data-series="IPL Grand Finale Tournament"
+                            data-moment="Championship Trophy Lifting Captain's Celebration">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card allrounder kkr" data-name="Sunil Narine">
+                <div class="player-banner kkr-banner"></div>
+                <div class="player-profile-img"><img src="https://assets.iplt20.com/ipl/IPLHeadshot2024/156.png" alt="Sunil Narine"></div>
+                <div class="card-header"><h4>Sunil Narine</h4><span class="role-tag tag-ar">All-Rounder</span></div>
+                <div class="card-body">
+                    <div class="team-location">💜 Kolkata Knight Riders</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">176</span></div>
+                        <div class="stat-box"><span class="lbl">Wickets</span><span class="val">180</span></div>
+                        <div class="stat-box"><span class="lbl">Best Score</span><span class="val">109</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=600"
+                            data-stadium="Eden Gardens, Kolkata"
+                            data-against="Rajasthan Royals"
+                            data-series="IPL League Phase Blockbuster"
+                            data-moment="Rare Stone-Faced Calm Century Bat Lift Celebration">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card allrounder kkr" data-name="Andre Russell">
+                <div class="player-banner kkr-banner"></div>
+                <div class="player-profile-img"><img src="https://assets.iplt20.com/ipl/IPLHeadshot2024/141.png" alt="Andre Russell"></div>
+                <div class="card-header"><h4>Andre Russell</h4><span class="role-tag tag-ar">All-Rounder</span></div>
+                <div class="card-body">
+                    <div class="team-location">💜 Kolkata Knight Riders</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">120</span></div>
+                        <div class="stat-box"><span class="lbl">Runs</span><span class="val">2484</span></div>
+                        <div class="stat-box"><span class="lbl">Wickets</span><span class="val">115</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1540747737956-37872e7e9821?q=80&w=600"
+                            data-stadium="Eden Gardens, Kolkata"
+                            data-against="Sunrisers Hyderabad"
+                            data-series="IPL Core Group Match Stage"
+                            data-moment="Muscle-Flexing Power Hitting Dynamic Finish Roar">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card batsman kkr" data-name="Rinku Singh">
+                <div class="player-banner kkr-banner"></div>
+                <div class="player-profile-img"><img src="https://www.bcci.tv/players/rinku-singh-profile-images/primary" alt="Rinku Singh"></div>
+                <div class="card-header"><h4>Rinku Singh</h4><span class="role-tag tag-bat">Batsman</span></div>
+                <div class="card-body">
+                    <div class="team-location">💜 Kolkata Knight Riders</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">46</span></div>
+                        <div class="stat-box"><span class="lbl">Runs</span><span class="val">893</span></div>
+                        <div class="stat-box"><span class="lbl">Best Score</span><span class="val">67*</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=600"
+                            data-stadium="Narendra Modi Stadium"
+                            data-against="Gujarat Titans"
+                            data-series="IPL Miraculous Match Phase"
+                            data-moment="Emotional Outpour After 5 Sixes in 5 Balls Miracle">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card bowler kkr" data-name="Mitchell Starc">
+                <div class="player-banner kkr-banner"></div>
+                <div class="player-profile-img"><img src="https://assets.iplt20.com/ipl/IPLHeadshot2024/210.png" alt="Mitchell Starc"></div>
+                <div class="card-header"><h4>Mitchell Starc</h4><span class="role-tag tag-bowl">Bowler</span></div>
+                <div class="card-body">
+                    <div class="team-location">💜 Kolkata Knight Riders</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">41</span></div>
+                        <div class="stat-box"><span class="lbl">Wickets</span><span class="val">51</span></div>
+                        <div class="stat-box"><span class="lbl">Best Bowl</span><span class="val">4/15</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600"
+                            data-stadium="Narendra Modi Stadium"
+                            data-against="Sunrisers Hyderabad"
+                            data-series="IPL Qualifier 1 Playoff"
+                            data-moment="Fierce Fast Bowler Flying Stump Wicket Sprint">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-card bowler kkr" data-name="Varun Chakaravarthy">
+                <div class="player-banner kkr-banner"></div>
+                <div class="player-profile-img"><img src="https://assets.iplt20.com/ipl/IPLHeadshot2024/140.png" alt="V. Chakaravarthy"></div>
+                <div class="card-header"><h4>V. Chakaravarthy</h4><span class="role-tag tag-bowl">Bowler</span></div>
+                <div class="card-body">
+                    <div class="team-location">💜 Kolkata Knight Riders</div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><span class="lbl">Matches</span><span class="val">70</span></div>
+                        <div class="stat-box"><span class="lbl">Wickets</span><span class="val">83</span></div>
+                        <div class="stat-box"><span class="lbl">Best Bowl</span><span class="val">5/20</span></div>
+                    </div>
+                    <button class="celebration-btn" 
+                            data-celebration-img="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600"
+                            data-stadium="Eden Gardens, Kolkata"
+                            data-against="Mumbai Indians"
+                            data-series="IPL Regular League Stage"
+                            data-moment="Mystery Leg-Spin Clean Bowled Pointing Skyward">
+                        ⚡ View Iconic Moment
+                    </button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="moment-modal">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="close-modal">&times;</button>
+            <div class="modal-image-wrapper">
+                <img src="" id="modal-img" alt="Celebration Moment">
+                <div class="modal-caption-badge" id="modal-moment-title">Celebration Name</div>
+            </div>
+            <div class="modal-details-body">
+                <h3 id="modal-player-title">Player Name</h3>
+                <hr class="modal-divider">
+                <table class="modal-data-table">
+                    <tr><td>🏟️ Stadium Venue:</td><td id="modal-stadium">Wankhede Stadium</td></tr>
+                    <tr><td>⚔️ Against Opponent:</td><td id="modal-against">Sri Lanka</td></tr>
+                    <tr><td>🏆 Tournament Series:</td><td id="modal-series">ICC ODI World Cup</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

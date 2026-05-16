@@ -1,0 +1,314 @@
+/* Core Overhaul & Layout Reset Architecture */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+    --bg-main: #060913;         /* Deep stadium atmosphere background tint */
+    --bg-surface: #0e1424;      /* High contrast modules base gray-blue */
+    --bg-card: #161e34;         /* Floating element block layers */
+    --accent-red: #ff2a44;      /* Vibrant neon action parameters crimson */
+    --accent-gold: #f59e0b;     /* High utility metric values accent text */
+    --text-pure: #f8fafc;       /* Crisp high contrast reading fonts */
+    --text-sub: #94a3b8;        /* Muted secondary element descriptors */
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-pure);
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+/* Glassmorphic Application Navigation Bar Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+    background: rgba(14, 20, 36, 0.85);
+    backdrop-filter: blur(18px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.pro-tag {
+    font-size: 0.65rem;
+    background: linear-gradient(135deg, var(--accent-red), #b91c1c);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-left: 6px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.live-badge {
+    background-color: rgba(255, 42, 68, 0.08);
+    color: var(--accent-red);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: 1px solid rgba(255, 42, 68, 0.2);
+}
+
+/* Cinematic Stadium Backdrop Hero Canvas Frame */
+.hero-dashboard {
+    position: relative;
+    height: 38vh;
+    display: flex;
+    align-items: center;
+    padding: 0 6%;
+    background: #000;
+}
+
+.hero-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(6, 9, 19, 1) 35%, rgba(6, 9, 19, 0.3) 70%, rgba(6, 9, 19, 0.95)),
+                url('https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=1600') center/cover;
+    opacity: 0.8;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+    max-width: 800px;
+}
+
+.sub-title {
+    color: var(--accent-red);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.hero-content h2 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.hero-content p {
+    color: var(--text-sub);
+    font-size: 1.05rem;
+}
+
+/* Master Layout Framework Grid Matrices */
+.dashboard-container {
+    padding: 40px 6%;
+}
+
+.control-panel {
+    background: var(--bg-surface);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 24px 30px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.panel-header h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 4px; }
+.panel-header p { color: var(--text-sub); font-size: 0.9rem; }
+
+.filter-controls { display: flex; gap: 10px; }
+.filter-btn {
+    background: var(--bg-card);
+    color: var(--text-sub);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 12px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all 0.25s ease;
+}
+
+.filter-btn:hover { color: var(--text-pure); background: #1f2a47; }
+.filter-btn.active {
+    background: var(--accent-red);
+    color: var(--text-pure);
+    border-color: var(--accent-red);
+    box-shadow: 0 4px 20px rgba(255, 42, 68, 0.3);
+}
+
+/* Core Multi-Franchise Responsive Grid Layout Mapping */
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.player-card {
+    background: var(--bg-surface);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.player-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 42, 68, 0.25);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+}
+
+/* Franchise Branding Banner Schemes */
+.player-banner { height: 75px; }
+.rcb-banner { background: linear-gradient(135deg, #d32f2f, #212121, #ffb300); }
+.mi-banner { background: linear-gradient(135deg, #0d47a1, #1976d2, #ffb300); }
+.csk-banner { background: linear-gradient(135deg, #fbc02d, #fff59d, #0d47a1); }
+.kkr-banner { background: linear-gradient(135deg, #4a148c, #7b1fa2, #fbc02d); }
+
+.player-profile-img {
+    position: absolute;
+    top: 25px;
+    left: 24px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--bg-surface);
+    background: #1e294b;
+}
+
+.player-profile-img img { width: 100%; height: 100%; object-fit: cover; }
+
+.card-header { padding: 45px 24px 12px 24px; display: flex; justify-content: space-between; align-items: flex-end; }
+.card-header h4 { font-size: 1.35rem; font-weight: 800; }
+
+.role-tag { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; padding: 4px 10px; border-radius: 6px; }
+.tag-bat { background: rgba(245, 158, 11, 0.1); color: var(--accent-gold); }
+.tag-bowl { background: rgba(59, 130, 246, 0.1); color: #3b82f6; }
+.tag-ar { background: rgba(168, 85, 247, 0.1); color: #a855f7; }
+
+.card-body { padding: 0 24px 24px 24px; }
+.team-location { font-size: 0.85rem; color: var(--text-sub); font-weight: 600; margin-bottom: 15px; }
+
+.stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 18px; }
+.stat-box { background: var(--bg-card); border-radius: 12px; padding: 10px; text-align: center; }
+.stat-box .lbl { font-size: 0.65rem; text-transform: uppercase; color: var(--text-sub); display: block; margin-bottom: 2px; }
+.stat-box .val { font-size: 1.05rem; font-weight: 800; }
+
+/* Interactive Experience View Launch Component Buttons */
+.celebration-btn {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: var(--text-pure);
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.celebration-btn:hover {
+    background: var(--accent-red);
+    border-color: var(--accent-red);
+    box-shadow: 0 4px 15px rgba(255, 42, 68, 0.25);
+}
+
+/* ==========================================================================
+   ⚙️ CORE INTERACTIVE MODAL COMPONENT STYLES (THE POPUP VIEW)
+   ========================================================================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(4, 6, 14, 0.85);
+    backdrop-filter: blur(12px);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.active { opacity: 1; pointer-events: auto; }
+
+.modal-card {
+    background: var(--bg-surface);
+    width: 90%;
+    max-width: 500px;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+    transform: scale(0.9) translateY(20px);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.8), 0 0 50px rgba(255, 42, 68, 0.05);
+}
+
+.modal-overlay.active .modal-card { transform: scale(1) translateY(0); }
+
+.modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    line-height: 31px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.2s;
+}
+.modal-close-btn:hover { background: var(--accent-red); }
+
+.modal-image-wrapper { position: relative; height: 260px; width: 100%; background: #000; }
+.modal-image-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+
+.modal-caption-badge {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    background: linear-gradient(90deg, var(--accent-red), #b91c1c);
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.modal-details-body { padding: 25px; }
+.modal-details-body h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: 12px; color: var(--text-pure); }
+.modal-divider { border: 0; height: 1px; background: rgba(255,255,255,0.06); margin-bottom: 15px; }
+
+.modal-data-table { width: 100%; border-collapse: collapse; }
+.modal-data-table td { padding: 8px 0; font-size: 0.95rem; }
+.modal-data-table td:first-child { color: var(--text-sub); font-weight: 600; width: 45%; }
+.modal-data-table td:last-child { color: var(--text-pure); font-weight: 700; }
